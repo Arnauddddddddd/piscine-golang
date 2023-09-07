@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/01-edu/z01"
-)
+import "github.com/01-edu/z01"
 
 func PrintComb() {
 	listeChiffre := [10]string{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
