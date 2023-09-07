@@ -14,7 +14,7 @@ func PrintComb() {
 				}
 			}
 		}
-	}	
+	}
 	for nombre := range listeNombres {
 		print(listeNombres[nombre], " ")
 		z01.PrintRune('\n')
