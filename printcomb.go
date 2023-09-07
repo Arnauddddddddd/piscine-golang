@@ -1,9 +1,9 @@
 package main
 
-import (github.com/01-edu/z01")
+import "piscine"
 
 func PrintComb() {
-	listeChiffre := [...]string{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
+	listeChiffre := [10]string{"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
 	listeNombres := []string{}
 
 	for i := 0; i < 10; i++ {
@@ -17,6 +17,8 @@ func PrintComb() {
 	}	
 	for nombre := range listeNombres {
 		print(listeNombres[nombre], " ")
-	}
-	z01.PrintRune(2)	
+	}} 
+
+func main() {
+	piscine.PrintComb()
 }
