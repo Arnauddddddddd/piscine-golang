@@ -15,9 +15,9 @@ func PrintComb() {
 						continue
 					} else {
 						z01.PrintRune(rune(44)) 
-					}					
+					}
+					z01.PrintRune(' ')					
 				}
-				z01.PrintRune(' ')
 			}
 		}
 	}
