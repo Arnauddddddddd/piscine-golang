@@ -11,13 +11,11 @@ func PrintComb() {
 					z01.PrintRune(listeChiffre[i])
 					z01.PrintRune(listeChiffre[j])
 					z01.PrintRune(listeChiffre[k])
-					if i == 7 && j == 8 && k == 9 {
-						continue
-					} else {
+					if i != 7 || j != 8 || k != 9 {
 						z01.PrintRune(rune(44))
-					}			
+					}
+					z01.PrintRune(' ')					
 				}
-				z01.PrintRune(' ')		
 			}
 		}
 	}
