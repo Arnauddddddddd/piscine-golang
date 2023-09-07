@@ -1,7 +1,6 @@
 package main
 
 import (
-	"piscine"
 	"github.com/01-edu/z01"
 )
 
@@ -20,10 +19,6 @@ func PrintComb() {
 	}	
 	for nombre := range listeNombres {
 		print(listeNombres[nombre], " ")
-	z01.PrintRune('\n')
+		z01.PrintRune('\n')
 	}
-} 
-
-func main() {
-	piscine.PrintComb()
 }
