@@ -11,6 +11,7 @@ func PrintComb() {
 					z01.PrintRune(listeChiffre[i])
 					z01.PrintRune(listeChiffre[j])
 					z01.PrintRune(listeChiffre[k])
+					z01.PrintRune(rune(44))
 					z01.PrintRune(' ')
 				}
 			}
