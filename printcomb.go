@@ -14,8 +14,8 @@ func PrintComb() {
 					if i != 7 || j != 8 || k != 9 {
 						z01.PrintRune(rune(44))
 					}
-					z01.PrintRune(rune(20))
 				}
+				z01.PrintRune(rune(20))
 			}
 		}
 	}
