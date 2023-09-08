@@ -1,7 +1,7 @@
 package main
 
-import "piscine"
+//import "piscine"
 
-func main(){
-	piscine.Strlen()
+func main() {
+	//piscine.Strlen()
 }
