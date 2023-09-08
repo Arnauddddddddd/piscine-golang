@@ -9,12 +9,11 @@ func BasicAtoi(s string) int {
 		for chiffre := 0; chiffre < len(ListeChiffreRune); chiffre++ {
 			if s[element] == byte(ListeChiffreRune[chiffre]) {
 				if chiffre != '0' {
-					nombre = puissance  *  ListeChiffre[chiffre] + nombre
+					nombre = puissance*ListeChiffre[chiffre] + nombre
 				}
 				puissance = puissance * 10
 			}
-		}
-		
+		}		
 	}
 	return nombre
 }
