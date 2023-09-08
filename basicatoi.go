@@ -13,7 +13,7 @@ func BasicAtoi(s string) int {
 				}
 				puissance = puissance * 10
 			}
-			}		
+		}		
 	}
 	return nombre
 }
