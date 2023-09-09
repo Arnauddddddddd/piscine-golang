@@ -23,8 +23,10 @@ func Atoi(s string) int {
 			return 0
 		}
 	}
-	if rune(s[0]) == 45 {
-		nombre -= nombre * 2
+	if len(s) > 0 {
+		if rune(s[0]) == 45 {
+			nombre -= nombre * 2
+		}
 	}
 	return nombre
 }
