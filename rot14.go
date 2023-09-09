@@ -5,7 +5,7 @@ func Rot14(s string) string {
 	for i := 0; i < len(s); i++ {
 		if rune(s[i]) <= 90 && rune(s[i]) >= 65 {
 			if rune(s[i])+14 >= 90 {
-				message_codee += string(65 + rune(s[i]) + 14 - 90)
+				message_codee += string(65 + rune(s[i]) + 14 - 91)
 			} else {
 				message_codee += string(rune(s[i]) + 14)
 			}
