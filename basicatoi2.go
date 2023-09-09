@@ -18,4 +18,5 @@ func BasicAtoi2(s string) int {
 			}
 		}
 	}
+	return nombre
 }
