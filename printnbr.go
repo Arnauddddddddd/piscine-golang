@@ -4,6 +4,7 @@ import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
 	liste_nombre_retire := []int{0}
+	liste_rune := []rune{}
 	signe := 1
 	multiplicateur := 1
 	if n < 0 {
@@ -33,6 +34,9 @@ func PrintNbr(n int) {
 		entier = nombre / multiplicateur
 		liste_nombre_retire = append(liste_nombre_retire, entier*multiplicateur)
 		multiplicateur /= 10
-		z01.PrintRune(rune(entier + 48))
+		liste_rune = append(liste_rune,rune(entier + 48))
+	}
+	for _, k := range liste_rune {
+		z01.PrintRune(k)
 	}
 }
