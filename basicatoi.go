@@ -12,7 +12,7 @@ func BasicAtoi(s string) int {
 					nombre = puissance*ListeChiffre[chiffre] + nombre
 				}
 				puissance = puissance * 10
-			}
+			}  
 		}
 	}
 	return nombre
