@@ -14,9 +14,6 @@ func PrintNbr(n int) {
 	var entier int
 	var nombre int
 	puissance := 0
-	if signe == -1 {
-		z01.PrintRune(45)
-	}
 	for i := 0; n >= 10; i++ {
 		n = n / 10
 		puissance++
@@ -24,6 +21,9 @@ func PrintNbr(n int) {
 	for j := 0; puissance != 0; j++ {
 		multiplicateur *= 10
 		puissance--
+	}
+	if signe == -1 {
+		z01.PrintRune(45)
 	}
 	for multiplicateur != 0 {
 		nombre = n2
