@@ -8,7 +8,7 @@ func PrintNbr(n int) {
 	signe := 1
 	multiplicateur := 1
 	if n < 0 {
-		n = n - n*2
+		n -= n*2
 		signe = -1
 	}
 	n2 := n
@@ -39,5 +39,4 @@ func PrintNbr(n int) {
 	for _, k := range liste_rune {
 		z01.PrintRune(k)
 	}
-	z01.PrintRune(' ')
 }
