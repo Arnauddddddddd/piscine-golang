@@ -8,14 +8,14 @@ func PrintNbr(n int) {
 	signe := 1
 	multiplicateur := 1
 	if n < 0 {
-		n -= n*2
+		n -= n * 2
 		signe = -1
 	}
 	n2 := n
 	var entier int
 	var nombre int
 	puissance := 0
-	for i := 0; n >= 10; i++ {
+	for i := 0; n > 10; i++ {
 		n = n / 10
 		puissance++
 	}
