@@ -23,10 +23,11 @@ func PrintNbr(n int) {
 		multiplicateur *= 10
 		puissance--
 	}
-	if signe == -1 {
-		z01.PrintRune(45)
-	}
 	for multiplicateur != 0 {
+		if signe == -1 {
+			z01.PrintRune(45)
+			signe = 1
+		}
 		nombre = n2
 		for _, element := range liste_nombre_retire {
 			nombre = nombre - element
