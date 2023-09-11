@@ -39,5 +39,5 @@ func PrintNbr(n int) {
 	for _, k := range liste_rune {
 		z01.PrintRune(k)
 	}
-	z01.PrintRune('\n')
+	z01.PrintRune(' ')
 }
