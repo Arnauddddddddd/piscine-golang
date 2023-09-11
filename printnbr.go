@@ -34,7 +34,7 @@ func PrintNbr(n int) {
 		entier = nombre / multiplicateur
 		liste_nombre_retire = append(liste_nombre_retire, entier*multiplicateur)
 		multiplicateur /= 10
-		liste_rune = append(liste_rune,rune(entier+48))
+		liste_rune = append(liste_rune, rune(entier+48))
 	}
 	for _, k := range liste_rune {
 		z01.PrintRune(k)
