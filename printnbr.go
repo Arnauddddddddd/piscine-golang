@@ -1,8 +1,9 @@
 package piscine
 
+import "github.com/01-edu/z01"
+
 func PrintNbr(n int) {
 	liste_nombre_retire := []int{0}
-	texte := ""
 	signe := 1
 	multiplicateur := 1
 	if n < 0 {
@@ -13,7 +14,10 @@ func PrintNbr(n int) {
 	var entier int
 	var nombre int
 	puissance := 0
-	for i := 0; n >= 10 ; i++ {
+	if signe == -1 {
+		z01.PrintRune(45)
+	}
+	for i := 0; n >= 10; i++ {
 		n = n / 10
 		puissance++
 	}
@@ -29,9 +33,6 @@ func PrintNbr(n int) {
 		entier = nombre / multiplicateur
 		liste_nombre_retire = append(liste_nombre_retire, entier*multiplicateur)
 		multiplicateur /= 10
-		texte += string(entier + 48)
-	}
-	if signe == -1 {
-		texte = "-" + texte
+		z01.PrintRune(rune(entier + 48))
 	}
 }
