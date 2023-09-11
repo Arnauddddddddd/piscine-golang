@@ -12,7 +12,7 @@ func Atoi(s string) int {
 		s = s[1:]
 	}
 	for _, caractere := range s {
-		entier = int(caractere - 48) + 10*entier
+		entier = int(caractere-48) + 10*entier
 		if caractere < 48 || caractere > 57 {
 			return 0
 		}
