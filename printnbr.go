@@ -33,6 +33,6 @@ func PrintNbr(n int) {
 		entier = nombre / multiplicateur
 		liste_nombre_retire = append(liste_nombre_retire, entier*multiplicateur)
 		multiplicateur /= 10
-		z01.PrintRune(rune(entier+48))
+		z01.PrintRune(rune(entier + 48))
 	}
 }
