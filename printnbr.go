@@ -1,9 +1,9 @@
 package piscine
 
-import 	"github.com/01-edu/z01"
+import "github.com/01-edu/z01"
 
 func PrintNbr(n int) {
-	liste_nombre:= []int{}
+	liste_nombre := []int{}
 	var signe int
 	multiplicateur := 1
 	m := n
@@ -23,13 +23,13 @@ func PrintNbr(n int) {
 			multiplicateur *= 10
 		}
 		for n > 1 {
-			entier = n/multiplicateur
+			entier = n / multiplicateur
 			liste_nombre = append(liste_nombre, entier)
-			n = n - entier * multiplicateur
+			n = n - entier*multiplicateur
 			multiplicateur /= 10
 		}
 		for _, i := range liste_nombre {
-			z01.PrintRune(rune(i+48))
+			z01.PrintRune(rune(i + 48))
 		}
 	}
 }
