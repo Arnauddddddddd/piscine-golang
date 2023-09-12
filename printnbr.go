@@ -1,45 +1,35 @@
 package piscine
 
-import "github.com/01-edu/z01"
+import 	"github.com/01-edu/z01"
 
 func PrintNbr(n int) {
-	liste_nombre_retire := []int{0}
-	liste_rune := []rune{}
-	signe := 1
+	liste_nombre:= []int{}
+	var signe int
 	multiplicateur := 1
-	var n2 int
-	if n < 0 {
-		n2 = n * -1
-		signe = -1
-	} else {
-		n2 = n
-	}
+	m := n
 	var entier int
-	var nombre int
-	puissance := 0
-	for i := 0; n > 10 || n < -10; i++ {
-		n = n / 10
-		puissance++
+	if n < 0 {
+		signe = -1
+		m, n = -n, -n
 	}
-	for j := 0; puissance != 0; j++ {
-		multiplicateur *= 10
-		puissance--
+	if signe == -1 {
+		z01.PrintRune(45)
 	}
-	for multiplicateur != 0 {
-		if signe == -1 {
-			z01.PrintRune(45)
-			signe = 1
+	if n == 0 {
+		z01.PrintRune('0')
+	} else {
+		for m > 10 {
+			m = m / 10
+			multiplicateur *= 10
 		}
-		nombre = n2
-		for _, element := range liste_nombre_retire {
-			nombre = nombre - element
+		for n > 1 {
+			entier = n/multiplicateur
+			liste_nombre = append(liste_nombre, entier)
+			n = n - entier * multiplicateur
+			multiplicateur /= 10
 		}
-		entier = nombre / multiplicateur
-		liste_nombre_retire = append(liste_nombre_retire, entier*multiplicateur)
-		multiplicateur /= 10
-		liste_rune = append(liste_rune, rune(entier+48))
-	}
-	for _, k := range liste_rune {
-		z01.PrintRune(k)
+		for _, i := range liste_nombre {
+			z01.PrintRune(rune(i+48))
+		}
 	}
 }
