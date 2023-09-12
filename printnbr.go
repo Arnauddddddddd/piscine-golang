@@ -7,15 +7,17 @@ func PrintNbr(n int) {
 	liste_rune := []rune{}
 	signe := 1
 	multiplicateur := 1
+	var n2 int
 	if n < 0 {
-		n -= n * 2
+		n2 = n * -1
 		signe = -1
+	} else {
+		n2 = n
 	}
-	n2 := n
 	var entier int
 	var nombre int
 	puissance := 0
-	for i := 0; n > 10; i++ {
+	for i := 0; n > 10 || n < -10; i++ {
 		n = n / 10
 		puissance++
 	}
