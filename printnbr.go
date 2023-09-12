@@ -13,9 +13,9 @@ func PrintNbr(n int) {
 	} else {
 		for n > 0 {
 			liste_nombre = append(liste_nombre, n%10)
-			n = n/10
+			n = n / 10
 		}
-		for i := len(liste_nombre)-1; i >= 0; i-- {
+		for i := len(liste_nombre) - 1; i >= 0; i-- {
 			z01.PrintRune(rune(liste_nombre[i] + 48))
 		}
 	}
