@@ -5,7 +5,7 @@ func FindNextPrime(nb int) int {
 	if nb <= 1 {
 		return 2
 	}
-	for i := 2; i < nb-1; i++ {
+	for i := 2; i < nb/2; i++ {
 		if nb%i == 0 {
 			tab = append(tab, i)
 		}
@@ -13,8 +13,5 @@ func FindNextPrime(nb int) int {
 	if len(tab) == 0 {
 		return nb
 	}
-	if nb <= 100000000000 {
-		return FindNextPrime(nb + 1)
-	}
-	return 0
+	return FindNextPrime(nb + 1)
 }
