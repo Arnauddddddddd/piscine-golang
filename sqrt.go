@@ -1,4 +1,6 @@
-package piscine
+package main
+
+import "fmt"
 
 func Sqrt(nb int) int {
 	if nb <= 0 {
@@ -10,10 +12,15 @@ func Sqrt(nb int) int {
 			if nb == i*i {
 				p = i
 			} else {
-				p = i - 1
+				return 0
 			}
 			break
 		}
 	}
 	return p
+}
+
+func main() {
+	fmt.Println(Sqrt(387828))
+	fmt.Println(Sqrt(3))
 }
