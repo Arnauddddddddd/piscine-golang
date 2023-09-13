@@ -3,7 +3,7 @@ package piscine
 func IsPrime(nb int) bool {
 	liste_prime := []int{2, 3, 5, 7, -2, -3, -5, -7}
 	if nb < 0 {
-		return true
+		return false
 	}
 	if nb == 1 {
 		return false
