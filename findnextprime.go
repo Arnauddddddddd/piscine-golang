@@ -12,7 +12,7 @@ func FindNextPrime(nb int) int {
 			}
 		}
 	} else {
-		for i := 2; i < nb/2; i++ {
+		for i := 2; i < nb; i++ {
 			if nb%i == 0 {
 				tab = append(tab, i)
 			}
