@@ -1,16 +1,16 @@
 package piscine
 
 func FindNextPrime(nb int) int {
-	tab := []int{}
+	tab := 0
 	if nb <= 1 {
 		return 2
 	}
-	for i := 2; i < nb/2; i++ {
+	for i := 2; i < nb/2 + 1; i++ {
 		if nb%i == 0 {
-			tab = append(tab, i)
+			tab = 1
 		}
 	}
-	if len(tab) == 0 {
+	if tab == 0 {
 		return nb
 	}
 	return FindNextPrime(nb + 1)
