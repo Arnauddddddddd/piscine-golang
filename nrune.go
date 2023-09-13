@@ -5,7 +5,7 @@ func NRune(s string, n int) rune {
 		return 0
 	}
 	tab := []rune(s)
-	if n > len(tab) - 1 {
+	if n > len(tab)-1 {
 		return 0
 	}
 	return tab[n-1]
