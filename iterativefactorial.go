@@ -1,14 +1,12 @@
 package piscine
 
 func IterativeFactorial(nb int) int {
-	entier := 1
-	liste_multi := []int{}
-	for nb != 0 {
-		liste_multi = append(liste_multi, nb)
-		nb--
+	if nb <= 0 {
+		return 0
 	}
-	for i := 0; i < len(liste_multi); i++ {
-		entier *= liste_multi[i]
+	if nb < 2 {
+		return nb
+	} else {
+		return nb * IterativeFactorial(nb - 1)
 	}
-	return entier
 }
