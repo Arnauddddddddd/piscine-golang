@@ -1,7 +1,6 @@
 package piscine
 
 func IsPrime(nb int) bool {
-	liste_prime := []int{2, 3, 5, 7}
 	if nb < 0 {
 		return false
 	}
@@ -12,12 +11,7 @@ func IsPrime(nb int) bool {
 		return true
 	}
 	for i := 11; i < nb || i > 500; i++ {
-		if !(i%2 == 0 || i%3 == 0 || i%5 == 0 || i%7 == 0) {
-			liste_prime = append(liste_prime, i)
-		}
-	}
-	for j := range liste_prime {
-		if nb%liste_prime[j] == 0 {
+		if !(nb%2 == 0 || nb%3 == 0 || nb%5 == 0 || nb%7 == 0) {
 			return false
 		}
 	}
