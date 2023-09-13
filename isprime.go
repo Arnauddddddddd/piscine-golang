@@ -11,7 +11,7 @@ func IsPrime(nb int) bool {
 	if nb == 2 || nb == 3 || nb == 5 || nb == 7 {
 		return true
 	}
-	for i := 11; i < nb || i > 50000000; i++ {
+	for i := 11; i < nb || i > 500000; i++ {
 		if !(i%2 == 0 || i%3 == 0 || i%5 == 0 || i%7 == 0) {
 			liste_prime = append(liste_prime, i)
 		}
