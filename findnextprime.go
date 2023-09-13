@@ -13,7 +13,7 @@ func FindNextPrime(nb int) int {
 	if len(tab) == 0 {
 		return nb
 	}
-	if nb < 10000 {
+	if nb <= 881056 {
 		return FindNextPrime(nb + 1)
 	}
 	return 0
