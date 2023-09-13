@@ -5,16 +5,15 @@ func Sqrt(nb int) int {
 		return 0
 	}
 	p := 0
-	i := 0
-	if nb == 3 {
-		return 0
-	}
-	for true {
-		if nb >= i*(i-1) && nb <= i*(i+1) || i*i == nb {
-			p = i
+	for i := 0; nb > i; i++ {
+		if nb >= i*(i-1) && nb <= i*i {
+			if nb == i*i {
+				p = i
+			} else {
+				p = i - 1
+			}
 			break
 		}
-		i++
 	}
 	return p
 }
