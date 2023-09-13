@@ -7,6 +7,6 @@ func IterativeFactorial(nb int) int {
 	if nb < 2 {
 		return nb
 	} else {
-		return nb * IterativeFactorial(nb - 1)
+		return nb * IterativeFactorial(nb-1)
 	}
 }
