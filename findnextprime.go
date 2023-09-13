@@ -13,5 +13,5 @@ func FindNextPrime(nb int) int {
 	if len(tab) == 0 {
 		return nb
 	}
-	return FindNextPrime(nb+1)
+	return FindNextPrime(nb + 1)
 }
