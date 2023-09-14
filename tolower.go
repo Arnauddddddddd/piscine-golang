@@ -12,4 +12,4 @@ func ToLower(s string) string {
 		s2 += string(tab[i])
 	}
 	return s2
-}	
+}
