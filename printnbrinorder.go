@@ -17,7 +17,7 @@ func PrintNbrInOrder(n int) {
 		}
 		SortIntegerTable(liste_nombre)
 		for i := range liste_nombre {
-			z01.PrintRune(rune(liste_nombre[i]+48))
+			z01.PrintRune(rune(liste_nombre[i] + 48))
 		}
 	}
 }
