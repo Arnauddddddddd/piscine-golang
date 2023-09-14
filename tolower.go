@@ -1,3 +1,5 @@
+package piscine
+
 func ToLower(s string) string {
 	tab := []rune(s)
 	for i := range tab {
