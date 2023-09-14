@@ -19,7 +19,7 @@ func PrintNbrInOrder(n int) {
 			liste_nombre = append(liste_nombre, -(n % 10))
 			n = n / 10
 		}
-		for i := 0; i <= len(liste_nombre) - 1; i++ {
+		for i := 0; i <= len(liste_nombre)-1; i++ {
 			z01.PrintRune(rune(liste_nombre[i] + 48))
 		}
 		if signe == -1 {
