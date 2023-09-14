@@ -1,4 +1,4 @@
-package piscine 
+package piscine
 
 func IsPrintable(s string) bool {
 	for i := range s {
