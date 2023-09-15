@@ -1,9 +1,9 @@
 package main
 
 import (
-		"os"
+	"os"
 
-		"github.com/01-edu/z01"
+	"github.com/01-edu/z01"
 )
 
 func main() {
