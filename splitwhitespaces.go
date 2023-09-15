@@ -7,6 +7,10 @@ func SplitWhiteSpaces(s string) []string {
 	for i := 0; i < len(tab); i++ {
 		txt = ""
 		if tab[i] == ' ' {
+			if tab[i+1] == ' ' {
+				i++
+				continue
+			}
 			for j := 0; j < i; j++ {
 				txt = txt + string(tab[j])
 			}
