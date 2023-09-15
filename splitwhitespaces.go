@@ -1,10 +1,9 @@
 package piscine
 
 func SplitWhiteSpaces(s string) []string {
-
 	for i := 1; i < len(s); i++ {
 		if string(s[i-1]) == " " && string(s[i]) == " " {
-				s = string(s[:i-1] + s[i:])
+			s = string(s[:i-1] + s[i:])
 		}
 	}
 	tab_str := []string{}
