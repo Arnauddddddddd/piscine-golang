@@ -22,8 +22,6 @@ func Split(s, sep string) []string {
 			s = s[:tab_indice[j]-1] + s[(tab_indice[j]):]
 		}
 	}
-
-	
 	txt := ""
 	for i := 0; i < len(tab); i++ {
 		txt += string(tab[i])
