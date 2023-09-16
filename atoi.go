@@ -3,9 +3,6 @@ package piscine
 func Atoi(s string) int {
 	entier := 0
 	signe := 1
-	if s == "" {
-		return 0
-	}
 	if s[0] == '+' {
 		signe = 1
 		s = s[1:]
@@ -13,6 +10,9 @@ func Atoi(s string) int {
 	if s[0] == '-' {
 		signe = -1
 		s = s[1:]
+	}
+	if len(s) == 0 {
+		return 0
 	}
 	for _, caractere := range s {
 		entier = 10 * entier
