@@ -18,9 +18,8 @@ func Index(s string, toFind string) int {
 		}
 		compteur = 0
 	}
-	if test == true {
-		return index
-	} else {
-		return -1
+	if !test {
+		index = -1
 	}
+	return index
 }
