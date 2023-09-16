@@ -14,7 +14,7 @@ func Index(s string, toFind string) int {
 			}
 		}
 		if compteur == len(tofind_tab) {
-			index++
+			index = i
 		}
 		compteur = 0
 	}
