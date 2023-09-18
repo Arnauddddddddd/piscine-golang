@@ -4,7 +4,7 @@ func Atoi(s string) int {
 	entier := 0
 	signe := 1
 	s2 := []rune(s)
-	if len(s2) == 0 {
+	if len(s) == 0 {
 		return 0
 	}
 	if s2[0] == '+' {
