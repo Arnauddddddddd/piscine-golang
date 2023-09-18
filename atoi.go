@@ -16,10 +16,10 @@ func Atoi(s string) int {
 		s2 = s2[1:]
 	}
 	for _, i := range s2 {
-		if i < 48 || i > 57 {
+		if i < '0' || i > '9' {
 			return 0
 		}
-		entier = 10*entier + int(i-48)
+		entier = 10*entier + int(i-'0')
 	}
 	return signe * entier
 }
