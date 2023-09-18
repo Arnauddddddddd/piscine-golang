@@ -14,7 +14,6 @@ func Atoi(s string) int {
 		signe = -1
 		s = s[1:]
 	}
-	
 	for i := 0; i < len(s); i++ {
 		if rune(s[i]) < 48 || rune(s[i]) > 57 {
 			return 0
