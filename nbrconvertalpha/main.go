@@ -25,13 +25,13 @@ func main() {
 		}
 		for k := 0; k < len(liste_int); k++ {
 			if !up {
-				if liste_int[k]+96 >= 32 && rune(liste_int[k]+96) <= 126 {
+				if (liste_int[k]+96 >= 65 && rune(liste_int[k]+96) <= 90) || (liste_int[k]+96 >= 97 && rune(liste_int[k]+96) <= 122) {
 					z01.PrintRune(liste_int[k] + 96)
 				} else {
 					z01.PrintRune(32)
 				}
 			} else {
-				if liste_int[k]+64 >= 32 && rune(liste_int[k]+64) <= 126 {
+				if (liste_int[k]+64 >= 65 && rune(liste_int[k]+64) <= 90) || (liste_int[k]+64 >= 97 && rune(liste_int[k]+64) <= 122) {
 					z01.PrintRune(liste_int[k] + 64)
 				} else {
 					z01.PrintRune(32)
