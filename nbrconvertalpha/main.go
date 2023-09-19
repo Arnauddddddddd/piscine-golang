@@ -11,6 +11,6 @@ import (
 func main() {
 	args := os.Args[1:]
 	for i := 0; i < len(args); i++ {
-		z01.PrintRune(rune(piscine.Atoi(args[i]))+96)
+		z01.PrintRune(rune(piscine.Atoi(args[i])) + 96)
 	}
 }
