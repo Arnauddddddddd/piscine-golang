@@ -13,6 +13,7 @@ func main() {
 	up := false
 	if args[0] == "--upper" {
 		up = true
+		args = args[1:]
 	}
 	for i := 0; i < len(args); i++ {
 		entier = 0
